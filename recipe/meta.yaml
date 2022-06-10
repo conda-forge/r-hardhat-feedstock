@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/hardhat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/hardhat/hardhat_{{ version }}.tar.gz
-  sha256: 2740dc243a440e7d32370a78f9258255faea6d900075901cf6009c651769e7bd
+  sha256: 0374a9f5af2e8eaf100b4dbda951a5289258d0d466e5ef10768e8ffda928b4b1
 
 build:
   merge_build_host: true  # [win]
