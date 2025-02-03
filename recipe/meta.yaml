@@ -23,16 +23,20 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-glue
-    - r-rlang >=0.4.1
-    - r-tibble
-    - r-vctrs >=0.2.0
+    - r-cli >=3.6.0
+    - r-glue >=1.6.2
+    - r-rlang >=1.1.0
+    - r-sparsevctrs >=0.2.0
+    - r-tibble >=3.2.1
+    - r-vctrs >=0.6.0
   run:
     - r-base
-    - r-glue
-    - r-rlang >=0.4.1
-    - r-tibble
-    - r-vctrs >=0.2.0
+    - r-cli >=3.6.0
+    - r-glue >=1.6.2
+    - r-rlang >=1.1.0
+    - r-sparsevctrs >=0.2.0
+    - r-tibble >=3.2.1
+    - r-vctrs >=0.6.0
 
 test:
   commands:
