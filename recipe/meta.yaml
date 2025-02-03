@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/hardhat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/hardhat/hardhat_{{ version }}.tar.gz
-  sha256: 46d023ddfc8f940cd889478fa91c42e894a0df58a10f3b6c0eb688a500b2b3ad
+  sha256: 993dfbdb9eefd10440e5b8b7c5a8f95a98b4fceac6ec1985b675ee35cbadde43
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -23,16 +23,20 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-glue
-    - r-rlang >=0.4.1
-    - r-tibble
-    - r-vctrs >=0.2.0
+    - r-cli >=3.6.0
+    - r-glue >=1.6.2
+    - r-rlang >=1.1.0
+    - r-sparsevctrs >=0.2.0
+    - r-tibble >=3.2.1
+    - r-vctrs >=0.6.0
   run:
     - r-base
-    - r-glue
-    - r-rlang >=0.4.1
-    - r-tibble
-    - r-vctrs >=0.2.0
+    - r-cli >=3.6.0
+    - r-glue >=1.6.2
+    - r-rlang >=1.1.0
+    - r-sparsevctrs >=0.2.0
+    - r-tibble >=3.2.1
+    - r-vctrs >=0.6.0
 
 test:
   commands:
