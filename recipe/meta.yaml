@@ -1,4 +1,4 @@
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/hardhat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/hardhat/hardhat_{{ version }}.tar.gz
-  sha256: 59fb0b932286bca7293dbb47169262a7f53890f6d77ca4aada6b247e979936fe
+  sha256: cf9a30328c6df8938525cba93f97962a4be67376493ddc90f27a6d3b36a1b6ec
 
 build:
   number: 0
